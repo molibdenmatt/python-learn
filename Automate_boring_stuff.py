@@ -2,6 +2,11 @@
 # https://www.udemy.com/automate/learn/v4/t/lecture/3662882?start=0
 # print("hello world")
 #
+import random, sys, os, math
+import pyperclip
+
+
+
 # test = 'yo ' + 'man' + '!' * 5
 # print(test)
 #
@@ -45,15 +50,36 @@
 #         continue #go back to while beginning
 #     print('spam is ' + str(spam))
 
-# print('My name is')
-# for i in range (5): #from i=0 to i=4 (not reaching 5)
-#     print ('Jimmy Five times ' + str(i))
-
 # total = 0
 # for num in range(101):
 #     total = total + num
 # print(total)
 
-for i in range(12, 32, 2): #(from, to, step)
-    print(i)
 
+# for i in range(12, 32, 2): #(from, to, step)
+#     print
+# print(random.randint(1,10))
+# pyperclip.copy('Hello World copied')
+# print(pyperclip.paste())
+
+def hello(name):
+    print('Hello ' + name)
+
+
+hello('Alice')
+hello('Bob ')
+
+s = input("Your name?") # easy prompt
+print("Your name is: ", end="")
+print(s)
+print("Hello, {}".format(s)) #another method to print
+x = 5/2.3
+print("{:.2f}".format(x)) #:.2f - format float, two digits after coma
+
+for i in range(65,65+26):
+    print("{} is {}".format(chr(i),i))
+
+
+
+sys.exit() # end the script
+print('You won\'t see me')
