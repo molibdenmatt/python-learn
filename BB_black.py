@@ -4,9 +4,8 @@
 
 import subprocess,sys
 link = sys.argv[1]
-print("Your CXP:\n" + link)
 cxp_name = link[-25:-4]
-print("CXP name:\n" + cxp_name)
+print("Your CXP:\n" + link)
 
 if sys.argv[1][-4:] == ".cxp":
     def term(command):
@@ -18,7 +17,7 @@ if sys.argv[1][-4:] == ".cxp":
     term('ar x sw.ar')
     term('/app/rbs/wrtools/tools-sdk-20130220/usr/sbin/unsquashfs -v sqfs.img')
     term('mv ./squashfs-root/bbmContLteRdbfBlm4TrinityLm/bin/bbmContLteRdbfBlm4TrinityLmC.bin ./bbmContLteRdbfBlm4TrinityLmC.bin')
-    #term('scp ./bbmContLteRdbfBlm4TrinityLmC.bin l:')
+    #term('scp ./bbmContLteRdbfBlm4TrinityLmC.bin l:') #Only for LAA STP
 else:
     host="root@"+sys.argv[1]
     ssh = subprocess.Popen(["ssh", "%s" % host],
