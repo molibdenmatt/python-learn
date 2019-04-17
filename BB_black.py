@@ -1,6 +1,8 @@
-# Usage:
-# BB_black.py https://*/CXP9029710_27-f3f7c0d.cxp - Will unpack the .bin file
-# BB_black.py 10.64.175.61 - Will send the black to node, setup and reboot it
+"""
+Usage:
+BB_black.py https://*/CXP9029710_27-f3f7c0d.cxp - Will unpack the .bin file
+BB_black.py 10.64.175.61 - Will send the black to node, setup and reboot it
+"""
 
 import subprocess,sys
 link = sys.argv[1]

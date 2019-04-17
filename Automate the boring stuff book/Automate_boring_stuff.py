@@ -4,8 +4,6 @@ import random, sys, os, math
 import pyperclip
 
 # test = 'yo ' + 'man' + '!' * 5
-# print(test)
-#
 # print ('What is our name?')
 # myName = input()
 # print ('It is good to meet you, ' + myName)
@@ -51,14 +49,13 @@ import pyperclip
 # print(pyperclip.paste())
 
 # def hello(name):
+#     global total #to make function use a global variable
+#     total = 1
 #     print('Hello ' + name)
-#
-#
-# hello('Alice')
-# hello('Bob ')
 #
 # s = input("Your name?") # easy prompt
 # print("Your name is: ", end="")
+# print ('cat','dog', sep= '-and-')
 # print(s)
 # print("Hello, {}".format(s)) #another method to print
 # x = 5/2.3
@@ -66,16 +63,25 @@ import pyperclip
 #
 # for i in range(65,65+26):
 #     print("{} is {}".format(chr(i),i))
+# for i in range(len(sys.argv)):
+#     print(sys.argv[i]) #Will print every argument from command line e.g. python program.py arg1 arg2
 
-for i in range(len(sys.argv)):
-    print(sys.argv[i]) #Will print every argument from command line e.g. python program.py arg1 arg2
+def div42by(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError: #Can be just except, without specific error
+        print('Error: you tried to divide by zero.')
 
+print(div42by(2))
+print(div42by(12))
+print(div42by(0))
 
-
-
+# Immutable types: ints, floats, strings, tuples
 
 
 
 sys.exit() # end the script
 print('You won\'t see me')
+
+
 
