@@ -40,3 +40,4 @@ print(mo.group())
 digitRegex = re.compile(r'(\d){3,5}?')  #will find the smallest possible match starting from left. Nongreedy match
 mo = digitRegex.search('123456789')
 print(mo.group())
+
