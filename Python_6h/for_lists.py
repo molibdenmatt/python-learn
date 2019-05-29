@@ -46,3 +46,7 @@ for item in duplicates:
     if item in duplicates[(duplicates.index(item)):]:
         duplicates.remove(item) 
 print(duplicates)
+
+numbers = (1,2,3)  # tuple is immutable
+x,y,z, = numbers  # Python unpacking
+print(x, y, z)
