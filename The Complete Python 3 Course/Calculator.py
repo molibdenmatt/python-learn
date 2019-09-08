@@ -1,5 +1,5 @@
 import re
-# Eval is dangerous! 
+# Eval is dangerous!
 
 print("Our magical calculator")
 print("type quit to exit")
