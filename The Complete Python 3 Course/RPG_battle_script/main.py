@@ -1,4 +1,4 @@
-from RPG_battle_script.classes.game import bcolors, Person
+from classes.game import bcolors, Person
 
 
 magic = [{"name": "Fire", "cost": 10, "dmg": 100},
