@@ -15,7 +15,7 @@ for i in numbers:
         print('x', end='')
     print('')
 
-numbers = [3, 6, 2, 8, 4 ,10, 2]
+numbers = [3, 6, 2, 8, 4, 10, 2]
 max = numbers[0]
 for n in numbers:
     if n > max:
@@ -23,16 +23,16 @@ for n in numbers:
 print(max)
 
 matrix = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
 ]
 print(matrix[1][1])
 for row in matrix:
     for item in row:
         print(item)
 
-numbers = [5,2,1,7,4]
+numbers = [5, 2, 1, 7, 4]
 numbers.append(13)
 print(numbers)
 numbers.insert(0, 11)
@@ -41,12 +41,12 @@ numbers.remove(5)
 numbers.sort()
 numbers.reverse()
 
-duplicates = [2,4,1,5,1,2,5,7,7,8,1]
+duplicates = [2, 4, 1, 5, 1, 2, 5, 7, 7, 8, 1]
 for item in duplicates:
     if item in duplicates[(duplicates.index(item)):]:
-        duplicates.remove(item) 
+        duplicates.remove(item)
 print(duplicates)
 
-numbers = (1,2,3)  # tuple is immutable
-x,y,z, = numbers  # Python unpacking
+numbers = (1, 2, 3)  # tuple is immutable
+x, y, z, = numbers  # Python unpacking
 print(x, y, z)
