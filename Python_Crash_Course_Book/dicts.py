@@ -41,3 +41,8 @@ for value_1 in user_0.values():
 
 for data in set(user_0.values()):  # Pack values from dict to set => Get a set of only unique values
     print(data)
+
+print(user_0.get("username2", "Matt"))  # get username2 value. If not found, will return Matt as default
+x = user_0.setdefault('weight', '5kg')  # returns value of 'weight' key. If none found, sets it to 5kg
+print(user_0)
+print(x)

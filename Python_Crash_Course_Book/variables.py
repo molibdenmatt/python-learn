@@ -9,7 +9,6 @@ snake_case - for everything else
 """
 
 # TEXT
-
 name = 'matt molibden'
 print(name.title())
 print(name.upper())
@@ -20,6 +19,10 @@ print("\nPython")  # new line
 
 name = " Python "
 print(name.strip())  # or lstrip() or rstrip()
+
+course = 'Python for Beginners'
+print(course.replace('Beginners', 'Noobs!'))  # replace
+print(course.find('for'))  # Index of first char of searched string
 
 # NUMBERS
 
@@ -57,6 +60,7 @@ cars_reverse_sorted = sorted(cars, reverse=True)
 
 print(len(cars_sorted))  # List length
 cars_copy = cars[:]  # Easy way to make a copy of a list
+
 
 # SLICES
 print('slice:')
