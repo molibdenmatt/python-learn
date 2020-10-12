@@ -38,6 +38,7 @@ Lists are ordered
 Lists are mutable
 Numeration starts from 0
 """
+
 motorcycles = ['suzuki', 'ducati', 'yamaha']
 motorcycles.append('bmw')
 print(motorcycles)

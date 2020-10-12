@@ -1,3 +1,6 @@
 /Java_Mosh_Course/Mosh_hamedani/nbproject/private/
-*/__pycache__/
+venv/
+__pycache__
 .idea/
+.DS_Store
+
