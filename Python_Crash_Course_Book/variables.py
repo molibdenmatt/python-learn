@@ -72,6 +72,7 @@ TUPLE
 Tuple is immutable but we can reassign the tuples value
 Tuple is ordered
 """
+
 # Creating a tuple:
 dimensions = (200, 400)
 dimensions_2 = 200, 400, 600, 200
